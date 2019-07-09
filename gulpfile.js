@@ -46,7 +46,8 @@ function watch() {
 exports.watch = watch;
 exports.style = style;
 
-const build = gulp.parallel(style, watch);
+const buildWatch = gulp.parallel(style, watch);
+const build = gulp.parallel(style);
 
 gulp.task('build', build);
-gulp.task('default', build);
+gulp.task('default', buildWatch);

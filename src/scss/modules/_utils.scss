@@ -1,0 +1,32 @@
+/**
+ * Utility styles
+ */
+
+// Typography
+.text-white {
+  color: #fff;
+}
+
+.text-base {
+  color: $baseColor;
+}
+
+.h1 {
+  font-family: 'Passion One', sans-serif;
+}
+
+// Background colors
+.grey-bg {
+  height: 6px;
+  background-color: #ccc;
+  border-bottom: 2px solid gray;
+}
+
+.bg-base {
+  background-color: $baseColor;
+}
+
+// Images
+.img-responsive {
+  max-width: 100%;
+}

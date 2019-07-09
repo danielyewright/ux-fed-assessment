@@ -5,24 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>UX FED Assessment</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Passion+One:700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Passion+One:700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-base">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-base d-none d-sm-block">
       <div class="container">
         <a class="navbar-brand" href="/">Example Page</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Item 1
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Item 2a</a>
                 <a class="dropdown-item" href="#">Item 2b</a>
               </div>
@@ -38,57 +35,107 @@
       </div>
     </nav>
 
-    <header class="pt-5 pb-5">
+    <nav id="mobileNav" class="navbar navbar-dark bg-base d-block d-sm-none">
+      <div class="container-fluid">
+        <a class="mx-auto navbar-brand" href="#">Example Page</a>
+        <ul class="nav mx-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Item 1
+            </a>
+            <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Item 2a</a>
+              <a class="dropdown-item" href="#">Item 2b</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Item 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Item 3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="pb-4">
       <div class="container">
         <h1>Welcome to my example page</h1>
         <h2>This is our new assessment</h2>
+        <div class="mountain-pic shadow"></div>
       </div>
     </header>
 
-    <section id="cards-section" class="pt-5 pb-5" style="background: #1A9DC5">
+    <div class="grey-bg"></div>
+    <section id="cards-section" class="pt-5 pb-5">
       <div class="container">
-        <div class="jumbotron bg-base">
-          <p class="lead text-white">These are cards</h4>
+        <div class="jumbotron bg-base text-base">
+          <h4 class="text-white">These are cards</h4>
           <p class="text-white">These cards are cool & tell you things about animals! Did you know a bird can run up to 65mph? And a cat can jump 26 feet in the air to catch prey? Animals are so cool.</p>
-          <p class="text-white"><a href="#">Check out more animal facts</a> There are so many facts to learn.</p>
+          <p class="text-white mb-5"><a href="#" class="text-white">Check out more animal facts</a> There are so many facts to learn.</p>
+          <div class="d-flex flex-row-reverse">
+            <div class="form-group form-inline text-white">
+              <div style="margin-right: 15px">I want to see:</div>
+              <div class="checkbox">
+                <label for="viewOnlyBirds" class="text-white">
+                  <input type="checkbox" name="viewOnlyBirds" id="viewOnlyBirds" value="viewOnlyBirds">
+                  Birds
+                </label>
+              </div>
+              <div class="checkbox">
+                <label for="viewOnlyCats" class="text-white">
+                  <input type="checkbox" name="viewOnlyCats" id="viewOnlyCats" value="viewOnlyCats">
+                  Cats
+                </label>
+              </div>
+            </div>
+          </div>
           <div class="row text-center">
             <div class="col-sm-3">
-              <div class="card shadow-sm">
+              <div class="card shadow">
                 <div class="card-img-top" style="background-image: url('images/cat.png')"></div>
                 <div class="card-body">
                   <h5 class="card-title">This is card 1</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p class="card-text">Cats use their whiskers to determine space between objects in the dark</p>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-link">Click & go!</a>
                 </div>
               </div>
             </div>
             <div class="col-sm-3">
-              <div class="card shadow-sm">
-                  <div class="card-img-top" style="background-image: url('images/birds.png')"></div>
+              <div class="card shadow">
+                <div class="card-img-top" style="background-image: url('images/birds.png')"></div>
                 <div class="card-body">
                   <h5 class="card-title">This is card 2</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p class="card-text">Some birds have membranes that cover their eyes like goggles, enabling them to see while traveling at high speeds.</p>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-link">Click & go!</a>
                 </div>
               </div>
             </div>
             <div class="col-sm-3">
-              <div class="card shadow-sm">
-                  <div class="card-img-top" style="background-image: url('images/cat.png')"></div>
+              <div class="card shadow">
+                <div class="card-img-top" style="background-image: url('images/cat.png')"></div>
                 <div class="card-body">
                   <h5 class="card-title">This is card 3</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p class="card-text">The cheetah is the only cat that can't retract its claws.</p>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-link">Click & go!</a>
                 </div>
               </div>
             </div>
             <div class="col-sm-3">
-              <div class="card shadow-sm">
-                  <div class="card-img-top" style="background-image: url('images/birds.png')"></div>
+              <div class="card shadow">
+                <div class="card-img-top" style="background-image: url('images/birds.png')"></div>
                 <div class="card-body">
                   <h5 class="card-title">This is card 4</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p class="card-text">Peregrine falcons can fly up to and sometimes surpassing 200mph as they hunt prey.</p>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-link">Click & go!</a>
                 </div>
               </div>
             </div>
@@ -105,7 +152,6 @@
             <p>Where the metal hits the meat player-coach but upsell so please use "solutionise" instead of solution ideas! :). Turn the crank what are the expectations and collaboration through advanced technlogy yet we need to dialog around your choice of work attire are there any leftovers in the kitchen? those options are already baked in with this model, yet clear blue water.</p>
             <p>Products need full resourcing and support from a cross-functional team in order to be built, maintained, and evolved quick-win or root-and-branch review. We need to get all stakeholders up to speed and in the right place nobody's fault it could have been managed better drink from the firehose we need to make the new version clean and sexy crisp ppt.</p>
             <p>Net net mobile friendly. Synergize productive mindfulness bench mark, loop back. Quick win synergize productive mindfulness nor hit the ground running yet when does this sunset?</p>
-
             <div class="row mt-4">
               <div class="col-sm-4">
                   <hr>
@@ -131,11 +177,11 @@
                 <hr>
                 <h5 class="mb-4">Picture of some things</h5>
                 <div class="row">
-                  <div class="col-sm-4">
+                  <div class="col-sm-4 col-3">
                     <img src="images/things.jpg" class="img-responsive" alt="">
                   </div>
-                  <div class="col-sm-8">
-                    <span>These guys are pretty cool. Thing one and thing 2. You'll like what they do. Such fun from so few!</span>
+                  <div class="col-sm-8 col-9">
+                    <span>These guys are pretty coo'. Thing one and thing 2. You'll like what they do. Such fun from so few!</span>
                   </div>
                 </div>
               </div>
@@ -145,6 +191,7 @@
       </div>
     </section>
 
+    <div class="grey-bg"></div>
     <footer class="pt-3 pb-1 bg-base">
       <div class="container">
         <p class="text-center">&copy; 2019 Example Company Name. All rights reserved.</p>
