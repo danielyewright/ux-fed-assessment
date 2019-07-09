@@ -1,0 +1,127 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+}
+
+a {
+  color: initial !important;
+}
+
+.h1 {
+  font-family: 'Passion One', sans-serif;
+}
+
+.bg-base {
+  background-color: $baseColor;
+}
+
+.navbar {
+  border-bottom: 4px solid #004C64;
+
+  &-brand {
+    font-size: 26px;
+  }
+
+  li {
+    &:hover {
+      background: #0f586f;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .dropdown-menu {
+    background: #0f586f;
+
+    li {
+      &:hover {
+        background: #004C64;
+      }
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+header {
+  h1 {
+    font-family: 'Passion One', sans-serif;
+    font-size: 66px;
+    color: #dd4205;
+    text-shadow: 2px 2px #808080;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+  }
+
+  h2 {
+    color: #1A9DC5;
+    font-weight: 600;
+  }
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+footer {
+  color: #fff;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-base {
+  color: $baseColor;
+}
+
+.card {
+  &-img-top {
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+  }
+}
+
+#site-content {
+  font-size: 15px;
+  color: #1a9dc5;
+
+  hr {
+    background: #1a9dc5;
+    border: none;
+    height: 2px;
+  }
+
+  h3,
+  h5 {
+    color: $baseColor;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  h5 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  ul {
+    padding: 0 15px;
+
+    &.styled {
+      padding: 0;
+
+      li {
+        list-style: none;
+        margin: 15px 0;
+      }
+    }
+  }
+}
